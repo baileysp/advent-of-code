@@ -59,6 +59,7 @@ enum Color {
 fn parse_games(input: &str) -> Result<Vec<Game>> {
     input
         .split('\n')
+        .filter(|l| !l.is_empty())
         .collect::<Vec<_>>()
         .into_iter()
         .map(|s| {
