@@ -22,27 +22,17 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_part_one() {
-        let result = part_one(&advent_of_code::template::read_file("examples", DAY));
-        assert_eq!(
-            true,
-            result.is_ok(),
-            "part one failed: {}",
-            result.err().unwrap()
-        );
-        assert_eq!(result.unwrap(), 0);
+    fn test_part_one() -> Result<()> {
+        let result = part_one(&advent_of_code::template::read_file("examples", DAY))?;
+        assert_eq!(result, 0);
+        Ok(())
     }
 
     #[test]
-    fn test_part_two() {
-        let result = part_two(&advent_of_code::template::read_file("examples", DAY));
-        assert_eq!(
-            true,
-            result.is_ok(),
-            "part two failed: {}",
-            result.err().unwrap()
-        );
-        assert_eq!(result.unwrap(), 0);
+    fn test_part_two() -> Result<()> {
+        let result = part_two(&advent_of_code::template::read_file("examples", DAY))?;
+        assert_eq!(result, 0);
+        Ok(())
     }
 }
 "#;
