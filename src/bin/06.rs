@@ -1,4 +1,4 @@
-use anyhow::{Context, Result};
+use anyhow::{Result};
 advent_of_code::solution!(6);
 
 #[derive(Debug)]

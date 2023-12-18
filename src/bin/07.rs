@@ -1,4 +1,4 @@
-use anyhow::{anyhow, bail, Context, Error, Result};
+use anyhow::{bail, Error, Result};
 use std::{cmp::Ordering, collections::HashMap, str::FromStr};
 
 advent_of_code::solution!(7);

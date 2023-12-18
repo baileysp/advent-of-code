@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-use anyhow::{Context, Result};
+use anyhow::{Result};
 advent_of_code::solution!(5);
 
 #[derive(Debug)]
