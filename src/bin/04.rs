@@ -1,6 +1,6 @@
 use std::collections::{HashMap, HashSet};
 
-use anyhow::{Context, Result};
+use anyhow::{Result};
 advent_of_code::solution!(4);
 
 #[derive(Debug)]
@@ -28,7 +28,7 @@ fn parse_cards(input: &str) -> Vec<Card> {
     input
         .lines()
         .map(|l| {
-            let (card, rest) = l.split_once(':').expect("card format");
+            let (_card, rest) = l.split_once(':').expect("card format");
             let (winning, all) = rest.split_once('|').expect("card format");
 
             let winning_numbers = winning

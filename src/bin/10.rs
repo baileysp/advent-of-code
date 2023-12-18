@@ -1,11 +1,11 @@
 use std::collections::HashMap;
 use std::collections::HashSet;
 use std::collections::VecDeque;
-use std::fs::File;
+
 use std::io::prelude::*;
 use std::vec;
 
-use anyhow::{anyhow, bail, Context, Result};
+use anyhow::{anyhow, Result};
 advent_of_code::solution!(10);
 
 #[derive(Debug, Clone, PartialEq)]
